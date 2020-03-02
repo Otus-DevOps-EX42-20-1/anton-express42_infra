@@ -1,7 +1,5 @@
 {
-    "variables": {
         "project_id": "encouraging-art-999999",
         "machine_type": "g1-small",
         "source_image_family": "ubuntu-1604-lts"
     }  
-}
