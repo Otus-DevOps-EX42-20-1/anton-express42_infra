@@ -1,16 +1,27 @@
 {
+    "variables": {
+        "image_description": "The best image!",
+        "disk_size": "10",
+        "disk-type": "SSD",
+        "network": "default",
+        "tags": "puma-server"
+
+        
+    },
+
     "builders": [
         {
             "type": "googlecompute",
-            "project_id": "encouraging-art-269507",
             "image_name": "reddit-base-{{timestamp}}",
             "image_family": "reddit-base",
-            "source_image_family": "ubuntu-1604-lts",
             "zone": "europe-west3-b",
             "ssh_username": "appuser",
-            "machine_type": "g1-small"
+            "project_id": "{{user `project_id`}}",
+            "source_image_family":"{{user `source_image_family`}}"
+           
         }
     ],
+
     "provisioners": [
         {
             "type": "shell",
