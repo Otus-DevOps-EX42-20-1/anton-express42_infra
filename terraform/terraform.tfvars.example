@@ -1,4 +1,5 @@
-project = "encouraging-art-269507"
+project         = "encouraging-art-269507"
 public_key_path = "~/.ssh/appuser.pub"
-private_key_path = "~/.ssh/appuser"
-disk_image = "reddit-base"
+disk_image      = "reddit-base"
+
+private_key = "~/.ssh/appuser"
