@@ -6,7 +6,7 @@
         "network": "default",
         "tags": "puma-server"
 
-        
+
     },
 
     "builders": [
@@ -18,7 +18,7 @@
             "ssh_username": "appuser",
             "project_id": "{{user `project_id`}}",
             "source_image_family":"{{user `source_image_family`}}"
-           
+
         }
     ],
 
