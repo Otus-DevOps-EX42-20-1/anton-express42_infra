@@ -1,0 +1,31 @@
+{
+    "variables": {
+        "image_description": "ruby",
+        "disk_size": "10",
+        "disk-type": "SSD",
+        "network": "default"
+
+        
+    },
+
+    "builders": [
+        {
+            "type": "googlecompute",
+            "image_name": "ruby-instance-{{timestamp}}",
+            "image_family": "ruby-instance",
+            "zone": "europe-west3-b",
+            "ssh_username": "appuser",
+            "project_id": "{{user `project_id`}}",
+            "source_image_family":"{{user `source_image_family`}}"
+           
+        }
+    ],
+
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/install_ruby.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
