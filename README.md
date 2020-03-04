@@ -14,3 +14,5 @@ someinternalhost_IP = 10.132.0.5
 
 testapp_IP = 35.204.33.171
 testapp_port = 9292
+
+In this HomeWork i create my playbook for Ansible!
