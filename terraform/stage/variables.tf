@@ -23,10 +23,10 @@ variable private_key {
 }
 variable app_disk_image {
   description = "Disk image for reddit app"
-  default     = "ruby-instance"
+  default = "ruby-instance"
 }
 variable db_disk_image {
   description = "Disk image for reddit db"
-  default     = "mongodb-instance"
+  default = "mongodb-instance"
 }
 
