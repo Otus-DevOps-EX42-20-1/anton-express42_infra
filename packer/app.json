@@ -3,8 +3,7 @@
         "image_description": "ruby",
         "disk_type": "SSD",
         "disk_size": "10",
-        "network": "default",
-        "tags": "puma-server"
+        "network": "default"
     },
 
     "builders": [
@@ -21,6 +20,8 @@
     "provisioners": [
         {
             "type": "ansible",
+            "extra_arguments": ["--tags", "ruby"],
+            "ansible_env_vars": ["ANSIBLE_ROLES_PATH={{ pwd }}/ansible/roles"],
             "playbook_file": "ansible/playbooks/packer_app.yml"
         }
     ]
