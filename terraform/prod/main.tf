@@ -29,4 +29,3 @@ module "vpc" {
   source        = "../modules/vpc"
   source_ranges = ["77.41.185.234/32"]
 }
-
