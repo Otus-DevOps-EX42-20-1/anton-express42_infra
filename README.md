@@ -19,3 +19,4 @@ In this HomeWork i create my playbook for Ansible!
 
 In this HomeWork i create some playbook!
 
+In this HomeWork i create prod and stage envirement!
